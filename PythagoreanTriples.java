@@ -1,4 +1,5 @@
 //This program generates random Pythagorean triples
+//Feel free to change the range
 
 public class PythagoreanTriples {
 	public static void main(String args[]) {
