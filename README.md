@@ -1,2 +1,2 @@
 # Cool Math Things
-# Check Them Out
+Check Them Out
