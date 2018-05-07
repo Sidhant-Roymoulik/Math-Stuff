@@ -1,2 +1,1 @@
-# Cool Math Things
-# Check Them Out
+# I Created This Files
