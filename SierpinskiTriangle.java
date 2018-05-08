@@ -36,7 +36,9 @@ public class SierpinskiTriangle extends JApplet {
 				RenderingHints.VALUE_ANTIALIAS_ON);
 		
 		Random rand = new Random();
-		int n = rand.nextInt(255) - 128;
+		int red = rand.nextInt(255) - 128;
+		int green = rand.nextInt(255) - 128;
+		int blue = rand.nextInt(255) - 128;
 		
 		if (level == 1){
 			Polygon t = new Polygon();
@@ -45,7 +47,7 @@ public class SierpinskiTriangle extends JApplet {
 			t.addPoint(p3.x, p3.y);
 			
 			g2.setStroke(new BasicStroke(0.5f));
-			g2.setPaint(new Color(128 + n, 128 + n, 128 + n));
+			g2.setPaint(new Color(128 + red, 128 + blue, 128 + green));
 			g2.drawPolygon(t);
 		} else {
 			Point p4 = midpoint(p1, p2);
