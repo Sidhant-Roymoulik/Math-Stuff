@@ -44,7 +44,7 @@ public class SierpinskiTriangle extends JApplet {
 			t.addPoint(p2.x, p2.y);
 			t.addPoint(p3.x, p3.y);
 			
-			g2.setStroke(new BasicStroke(1.0f));
+			g2.setStroke(new BasicStroke(0.5f));
 			g2.setPaint(new Color(128 + n, 128 + n, 128 + n));
 			g2.drawPolygon(t);
 		} else {
