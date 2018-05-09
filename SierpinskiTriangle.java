@@ -25,7 +25,7 @@ public class SierpinskiTriangle extends JApplet {
 		Point p2 = new Point(SIZE / 2, 0);
 		Point p3 = new Point(SIZE, height);
 		
-		int level = 10;
+		int level = 12;
 		
 		sierpinski(level, p1, p2, p3, g);
 	}
