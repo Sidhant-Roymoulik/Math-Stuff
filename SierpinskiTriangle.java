@@ -25,9 +25,15 @@ public class SierpinskiTriangle extends JApplet {
 		Point p2 = new Point(SIZE / 2, 0);
 		Point p3 = new Point(SIZE, height);
 		
-		int level = 12;
+		System.out.println("Press the Red Box to Terminate.");
 		
-		sierpinski(level, p1, p2, p3, g);
+		int level = 11;
+		
+		while(true) {
+			sierpinski(level, p1, p2, p3, g);
+			g2.setColor(Color.BLACK);
+			g2.fillRect(0, 0,  d.width, d.height);
+		}
 	}
 
 	private void sierpinski(int level, Point p1, Point p2, Point p3, Graphics g) {
