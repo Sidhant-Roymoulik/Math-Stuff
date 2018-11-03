@@ -1,6 +1,6 @@
 /*	November 1, 2018
  * 	Sidhant Roymoulik
- * 	
+ * 	Does Require DrawingPanel Class
  * 	Using Straight Lines to Draw Curves
  */
 
