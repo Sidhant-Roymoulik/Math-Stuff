@@ -1,6 +1,6 @@
 /*	November 1, 2018
  * 	Sidhant Roymoulik
- * 	Does Require DrawingPanel Class
+ * 	
  * 	Using Straight Lines to Draw Curves
  */
 
@@ -12,8 +12,6 @@ public class Curves {
 		DrawingPanel panel = new DrawingPanel(800, 800);
 		Graphics g = panel.getGraphics();
 		
-		g.setColor(Color.BLACK);
-		g.drawRect(0, 0, panel.getWidth(), panel.getHeight());
 		while(true) {
 		//drawCurve(g, 0, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2, 50, 4, panel);
 		//drawCurve(g, panel.getWidth()/2, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2, 50, 3, panel);
@@ -23,24 +21,16 @@ public class Curves {
 		g.setColor(Color.WHITE);
 		drawCurve(g, panel.getWidth()/2, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2, 50, 1, panel);
 		g.setColor(Color.WHITE);
-		g.fillRect(0, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2);
-		g.setColor(Color.BLACK);
-		g.drawRect(0, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2);
+		g.fillRect(0, panel.getHeight()/2+1, panel.getWidth()/2, panel.getHeight()/2);
 		drawCurve(g, 0, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2, 50, 2, panel);
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, panel.getWidth()/2, panel.getHeight()/2);
-		g.setColor(Color.BLACK);
-		g.drawRect(0, 0, panel.getWidth()/2, panel.getHeight()/2);
 		drawCurve(g, 0, 0, panel.getWidth()/2, panel.getHeight()/2, 50, 3, panel);
 		g.setColor(Color.WHITE);
 		g.fillRect(panel.getWidth()/2, 0, panel.getWidth()/2, panel.getHeight()/2);
-		g.setColor(Color.BLACK);
-		g.drawRect(panel.getWidth()/2, 0, panel.getWidth()/2, panel.getHeight()/2);
 		drawCurve(g, panel.getWidth()/2, 0, panel.getWidth()/2, panel.getHeight()/2, 50, 4, panel);
 		g.setColor(Color.WHITE);
-		g.fillRect(panel.getWidth()/2, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2);
-		g.setColor(Color.BLACK);
-		g.drawRect(panel.getWidth()/2, panel.getHeight()/2, panel.getWidth()/2, panel.getHeight()/2);
+		g.fillRect(panel.getWidth()/2+1, panel.getHeight()/2+1, panel.getWidth()/2, panel.getHeight()/2);
 		System.out.println("Finished");
 		}
 	}
